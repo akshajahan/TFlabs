@@ -174,3 +174,6 @@ https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-terr
 
 GITlink OCT DevOps:
 https://github.com/akshajahan/TFlabs
+
+
+https://learn.microsoft.com/en-us/azure/developer/terraform/
