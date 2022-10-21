@@ -177,3 +177,11 @@ https://github.com/akshajahan/TFlabs
 
 
 https://learn.microsoft.com/en-us/azure/developer/terraform/
+
+
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs#features
+https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret
+
+LabTask 20OCT
+https://learn.microsoft.com/en-us/azure/app-service/provision-resource-terraform
+
