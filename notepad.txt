@@ -1,0 +1,31 @@
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+
+"homeTenantId": "xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+ sub:"id": "xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+
+
+ {
+  "appId": "xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx",
+  "displayName": "xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx,
+  "password": "xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx",
+  "tenant": "xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+}
+appId is the client_id defined above.
+password is the client_secret defined above.
+tenant is the tenant_id defined above.
+
+
+$ export ARM_CLIENT_ID="xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+$ export ARM_CLIENT_SECRET="xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+$ export ARM_SUBSCRIPTION_ID="xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+$ export ARM_TENANT_ID="xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+
+  # Configure the Microsoft Azure Provider
+provider "azurerm" {
+  features {}
+
+  subscription_id = "xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+  client_id       = "xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+  client_secret   = xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx
+  tenant_id       = "xxxx-xxxxxxxxxxxxxxxx-xxxxxxxxxxxxxxxx"
+}
